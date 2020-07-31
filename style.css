@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Inconsolata', monospace; */
+    /* font-family: 'Antic Slab', serif; */
+    font-family: 'Hind Madurai', sans-serif;
+
+
+}
+
+.cover {
+    background-image: url("cover.jpg")  ;
+    background-size: cover;
+    height: 100vh;
+}
+.cover-box {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    /* width: 600px; */
+    width: 40%;
+    transform: translate(0%,30%);
+    margin-left: 55%;
+}
+
+nav {
+    /* display: flex;
+    position: absolute;
+    width: 100vw;
+    background: rgba(255, 14, 14,0.4);
+    margin-right: 0;  */
+    overflow: hidden;
+    position: absolute;
+}
+
+nav h1 {
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+
+    
+    /* list-style: none;
+    display: block; */
+    
+    /* list-style-type: none;
+  margin: 0;
+  padding: 0;
+     */
+     font-size: 25px;
+}
+
+nav li {
+    padding: 10px;
+    margin: auto;
+}
+
+.test {
+    height: 100vh;
+}
