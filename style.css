@@ -15,23 +15,31 @@ body {
 }
 .cover-box {
     position: relative;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
     padding: 20px;
     border-radius: 8px;
     /* width: 600px; */
     width: 40%;
     transform: translate(0%,30%);
-    margin-left: 55%;
+    margin-left: 50%;
+}
+
+a {
+    text-decoration: none;
 }
 
 nav {
-    /* display: flex;
+    display: flex;
+    position: absolute;
+
+    display: flex;
     position: absolute;
     width: 100vw;
     background: rgba(255, 14, 14,0.4);
-    margin-right: 0;  */
-    overflow: hidden;
+    /* overflow: hidden;
     position: absolute;
+    margin: 0;
+    padding: 0; */
 }
 
 nav h1 {
@@ -41,22 +49,18 @@ nav h1 {
 
 nav ul {
     list-style: none;
-    display: inline-block;
-
     
-    /* list-style: none;
-    display: block; */
-    
-    /* list-style-type: none;
-  margin: 0;
-  padding: 0;
-     */
-     font-size: 25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
 }
 
 nav li {
     padding: 10px;
     margin: auto;
+    display: block;
+    float: left;
 }
 
 .test {
