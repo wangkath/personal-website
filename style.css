@@ -754,3 +754,33 @@ a {
     color: black;
     padding: 0px 5px;
 }
+
+.home {
+    position: relative;
+}
+
+.portrait {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.main-home {
+    padding-top: 80px;
+    margin: auto;
+    max-width: 70%;
+}
+
+.image {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.main-text {
+    float: right;
+    width: 60%;
+    padding: 0px 15px;
+    border: gray solid 1px;
+    border-radius: 10px;
+    transition: ease 1s;
+}
