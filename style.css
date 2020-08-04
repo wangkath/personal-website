@@ -22,8 +22,11 @@ a {
     text-shadow: 3px 3px 0px rgb(206, 206, 206);
     line-height: 50px;
 }
-.nav a {
+.nav h1 a {
     color: black;
+}
+.nav-item a {
+    color: rgb(68, 68, 68);
 }
 /* nav underline */
 .underline {
@@ -774,13 +777,18 @@ a {
     width: 25%;
     float: left;
     text-align: center;
+    color: rgb(59, 59, 59);
+}
+
+.image h3 {
+    color: rgb(88, 88, 88);
 }
 
 .main-text {
     float: right;
     width: 60%;
-    padding: 0px 15px;
-    border: gray solid 1px;
-    border-radius: 10px;
+    /* padding: 0px 15px; */
+    /* border: gray solid 1px; */
+    /* border-radius: 10px; */
     transition: ease 1s;
 }
