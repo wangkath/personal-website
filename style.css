@@ -774,22 +774,45 @@ a {
 .main-home {
     padding-top: 80px;
     margin: auto;
-    max-width: 80%;
+    max-width: 90%;
+}
+.image img {
+    width: 65%;
 }
 
 .image {
-    width: 25%;
+    width: 30%;
+    margin-left: 3%;
     float: left;
     text-align: center;
     color: rgb(59, 59, 59);
+    padding-top: 30px;
 }
-
+.image h2 {
+    font-size: 30px;
+    color: black;
+}
 .image h3 {
     color: rgb(122, 122, 122);
 }
 
 .main-text {
     float: right;
-    width: 70%;
+    margin-left: 2%;
+    width: 65%;
     transition: ease 1s;
+    color: rgb(50,50,50);
+}
+.main-text h1 {
+    font-size: 28px;
+}
+.main-text p {
+    font-size: 18px;
+}
+
+.random {
+    margin-left: 5px;
+}
+.random p {
+    font-size: 17px;
 }
