@@ -34,14 +34,23 @@ a {
     background-color: transparent;
 	width: 0%;
     transition: ease 0.5s;
-    box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.85);
+    box-shadow: 1px 1px 0px rgba(209, 209, 209, 0.85);
 }
 .nav-item:hover .underline {
-    background-color: rgb(0, 30, 39);
+    background-color: rgb(88, 88, 88);
 	width: 100%;
 }
 .nav-item:hover a{
-    color: rgb(0, 82, 107)
+    color: rgb(57, 159, 255);
+}
+.active .underline {
+    background-color: rgb(88, 88, 88);
+    width: 100%;
+    box-shadow: 1px 1px 0px rgba(209, 209, 209, 0.85);
+}
+.active a {
+    /* color: rgb(0, 82, 107); */
+    color: rgb(57, 159, 255);
 }
 @media only screen and (max-width: 422px) {
     .cover {
@@ -105,7 +114,7 @@ a {
     nav li {
         padding: 3px 0px;
         font-size: 25px;
-        text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.85);
+        text-shadow: 2px 2px 0px rgba(212, 212, 212, 0.85);
     }
     nav ul {
         position: absolute;
@@ -260,7 +269,7 @@ a {
     nav li {
         padding: 3px 0px;
         font-size: 25px;
-        text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.85);
+        text-shadow: 2px 2px 0px rgba(212, 212, 212, 0.85);
     }
     nav ul {
         position: absolute;
@@ -412,7 +421,7 @@ a {
     nav li {
         padding: 3px 0px;
         font-size: 25px;
-        text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.85);
+        text-shadow: 2px 2px 0px rgba(212, 212, 212, 0.85);
     }
     nav ul {
         position: absolute;
@@ -429,9 +438,14 @@ a {
     .nav-icon:hover {
         cursor: pointer;
     }
+    .nav-icon i {
+        text-shadow: 2px 2px 0px rgb(145, 202, 255);
+    }
     .nav-icon:hover i{
-        color: white;
-        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.85);
+        /* color: white; */
+        color: rgb(96, 178, 255);
+        text-shadow: 2px 2px 0px rgb(82, 82, 82);
+        /* text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.85); */
     }
     /* rhythmic images */
     .column {
@@ -531,7 +545,7 @@ a {
         margin: auto;
         font-size: 25px;
         float: left;
-        text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.85);
+        text-shadow: 2px 2px 0px rgba(212, 212, 212, 0.85);
     }
     .nav-icon {
         visibility: hidden;
@@ -611,14 +625,6 @@ a {
     }
 }
 
-.active .underline {
-    background-color: rgb(0, 30, 39);
-    width: 100%;
-    box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.85);
-}
-.active a {
-    color: rgb(0, 82, 107);
-}
 /* nav empty box */
 .box {
     height: 60px;
@@ -647,8 +653,6 @@ a {
     width: 90%;
     border-radius: 10px;
     padding: 0px 0px;
-    /* text-shadow: 3px 3px 0px white; */
-    /* text-shadow: 3px 3px 0px rgb(255, 181, 163); */
     text-shadow: 3px 3px 0px rgba(0, 82, 107,0.5);
     text-align: center;
 }
@@ -770,7 +774,7 @@ a {
 .main-home {
     padding-top: 80px;
     margin: auto;
-    max-width: 70%;
+    max-width: 80%;
 }
 
 .image {
@@ -781,14 +785,11 @@ a {
 }
 
 .image h3 {
-    color: rgb(88, 88, 88);
+    color: rgb(122, 122, 122);
 }
 
 .main-text {
     float: right;
-    width: 60%;
-    /* padding: 0px 15px; */
-    /* border: gray solid 1px; */
-    /* border-radius: 10px; */
+    width: 70%;
     transition: ease 1s;
 }
