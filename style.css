@@ -13,8 +13,10 @@ a {
     text-decoration: none;
 }
 /* navbar */
+
 .nav h1 {
     font-size: 50px;
+    font-family: 'Poppins', sans-serif;
     margin-top: 8px;
     margin-left: 20px;
     position: absolute;
@@ -49,7 +51,6 @@ a {
     box-shadow: 1px 1px 0px rgba(209, 209, 209, 0.85);
 }
 .active a {
-    /* color: rgb(0, 82, 107); */
     color: rgb(57, 159, 255);
 }
 @media only screen and (max-width: 422px) {
@@ -111,12 +112,12 @@ a {
         margin-left: 0px;
         padding: 0;
     }
-    nav li {
+    .nav li {
         padding: 3px 0px;
         font-size: 25px;
         text-shadow: 2px 2px 0px rgba(212, 212, 212, 0.85);
     }
-    nav ul {
+    .nav ul {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -402,12 +403,22 @@ a {
         position: absolute;
         width: 15%;
     }
+    .nav-title h1{
+        width: 80%;
+        padding-bottom: 10px;
+        z-index: 1;
+    }
     .top {
-        margin-top: 60px;
+        margin-top: 80px;
+    }
+    .toggle ul{
+        background: white;
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
     }
     .toggle .nav-item {
         visibility: visible;
         position: relative;
+        right: 0px;
         margin-left: 10px;
     }
     .nav-icon {
@@ -439,6 +450,7 @@ a {
         cursor: pointer;
     }
     .nav-icon i {
+        color: black;
         text-shadow: 2px 2px 0px rgb(145, 202, 255);
     }
     .nav-icon:hover i{
@@ -532,7 +544,7 @@ a {
         box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
     }
     /* responsive navbar */
-    nav ul {
+    .nav ul {
         right: 0px;
         position: absolute;
         list-style: none;
@@ -540,7 +552,7 @@ a {
         margin-right: 10px;
         padding: 0;
     }
-    nav li {
+    .nav li {
         padding: 20px 30px;
         margin: auto;
         font-size: 25px;
@@ -792,9 +804,11 @@ a {
 .image h2 {
     font-size: 30px;
     color: black;
+    line-height: 29px;
 }
 .image h3 {
     color: rgb(122, 122, 122);
+    line-height: 29px;
 }
 
 .main-text {
@@ -839,8 +853,9 @@ a {
     border-radius: 10px;
     margin: auto;
     padding: 0px 20px;
+    padding-top: 15px;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
-    transition: 0.3s;
+    transition: .3s;
     margin-bottom: 40px;
     display: flex;
 }
@@ -848,7 +863,7 @@ a {
     box-shadow: 2px 2px 20px rgba(0,0,0,0.5);
 }
 .box-image img {
-    width: 100%;  
+    width: 100%;
     border-radius: 5px;
 }
 .box-image p {
@@ -868,5 +883,6 @@ a {
 
 .box-title {
     font-size: 30px;
-    text-shadow: 2px 2px 0px rgb(190, 190, 190);
+    text-shadow: 2px 2px 0px rgb(214, 214, 214);
+    font-family: 'Poppins', sans-serif;
 }

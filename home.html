@@ -6,7 +6,7 @@
         <title>Katherine Wang</title>
         <!-- CSS -->
         <link rel="stylesheet" href="style.css"></link>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
         <!-- favicon -->
         <link rel="icon" href="logo.png">
         <!-- font -->
@@ -17,31 +17,40 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- script -->
         <script src = "script.js"></script>
+
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
     </head>
     <body>
         <div class = "nav">
-            <h1><a href = "index.html">Katherine Wang</a></h1>
+            <div class = "nav-title">
+                <h1><a href = "index.html">Katherine Wang</a></h1>
+            </div>
             <nav>
                 <ul>
-                <li id = "nav-icon" class = "nav-icon">
-                    <a><i id = "change" class="fas fa-bars"></i></a>
-                </li>
-                <li class = "nav-item top active">
-                    <a href = "home.html">Home</a>
-                    <div class="underline"></div>
-                </li>
-                <li class = "nav-item">
-                    <a href = "#resume">Resume</a>
-                    <div class="underline"></div>
-                </li>
-                <li class = "nav-item">
-                    <a href = "rhythmic.html">Gallery</a>
-                    <div class="underline"></div>
-                </li>
-                <li class = "nav-item">
-                    <a href = "awards.html">Awards</a>
-                    <div class="underline"></div>
-                </li>
+                    <li id = "nav-icon" class = "nav-icon">
+                        <a><i id = "change" class="fas fa-bars"></i></a>
+                    </li>
+                    <li class = "nav-item top active">
+                        <a href = "home.html">Home</a>
+                        <div class="hi underline"></div>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "#resume">Resume</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "rhythmic.html">Gallery</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "awards.html">Awards</a>
+                        <div class="underline"></div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -62,7 +71,7 @@
                 <h2>Random info!</h2>
                 <div class = "random">
                     <p>-  Favorite movie: Inception</p>
-                    <p>-  Spirit vegetable: carrot :^) </p>
+                    <p>-  Spirit vegetable: carrot :^)</p>
                     <p>-  Favorite cuisine: anything! but I love Chinese & Mediterranean food:)</p>
                     <p>-  </p>
                 </div>
@@ -72,7 +81,7 @@
             <div class = "section-home gray">
                 <span class = "title-home">Leadership</span>
                 <br><br><br>
-                <div class = "box-home" data-aos="fade-right">
+                <div class = "box-home animate__fadeInRight" uk-scrollspy="cls: uk-animation-slide-left; delay: 100">
                     <div class = "box-text">
                         <h1 class = "box-title">Rhythmic Gymnastics Team Captain</h1>
                         <p>I'm the founder and president of the Math Modeling Club at my school, where I teach students the power of applied math and give them the opportunity to participate in competitions and win scholarship money.</p>
@@ -82,7 +91,7 @@
                         <p>SF Chase Center Performance, picture with Gavin Newsom</p>
                     </div>
                 </div>
-                <div class = "box-home" data-aos="fade-left">
+                <div class = "box-home" uk-scrollspy="cls: uk-animation-slide-right; delay: 100">
                     <div class = "box-text">
                         <h1 class = "box-title">Math Modeling Club</h1>
                         <p>I'm the founder and president of the Math Modeling Club at my school, where I teach students the power of applied math and give them the opportunity to participate in competitions and win scholarship money.</p>
@@ -92,7 +101,7 @@
                         <p>Award from Modeling the Future Challenge</p>
                     </div>
                 </div>
-                <div class = "box-home" data-aos="fade-right">
+                <div class = "box-home" uk-scrollspy="cls: uk-animation-slide-left; delay: 100">
                     <div class = "box-text">
                         <h1 class = "box-title">Girls Who Code</h1>
                         <p>I'm the founder and president of the Math Modeling Club at my school, where I teach students the power of applied math and give them the opportunity to participate in competitions and win scholarship money.</p>
@@ -100,35 +109,55 @@
                     <div class = "box-image">
                         <img src = "gwc.jpg">
                         <p>Picture from weekly classes with the girls</p>
+                    </div>
+                </div>
+                <div class = "box-home" uk-scrollspy="cls: uk-animation-slide-right; delay: 100">
+                    <div class = "box-text">
+                        <h1 class = "box-title">FBLA</h1>
+                        <p>I'm the founder and president of the Math Modeling Club at my school, where I teach students the power of applied math and give them the opportunity to participate in competitions and win scholarship money.</p>
+                    </div>
+                    <div class = "box-image">
+                        <img src = "fbla.png" style = "width: 85%;">
+                        <p>Award from Modeling the Future Challenge</p>
                     </div>
                 </div>
             </div>
             <div class = "section-home">
                 <span class = "title-home">Projects</span>
                 <br><br><br>
-                <div class = "box-home">
+                <div class = "box-home" uk-scrollspy="cls: uk-animation-slide-left; delay: 100">
                     <div class = "box-text">
-                        <h1 class = "box-title">Rhythmic Gymnastics Team Captain</h1>
+                        <h1 class = "box-title">RG Wellness</h1>
                         <p>I'm the founder and president of the Math Modeling Club at my school, where I teach students the power of applied math and give them the opportunity to participate in competitions and win scholarship money.</p>
                     </div>
                     <div class = "box-image">
-                        <img src = "sfchase.jpg">
-                        <p>SF Chase Center Performance, picture with Gavin Newsom</p>
-                    </div>
-                </div>
-                <div class = "box-home">
-                    <div class = "box-text">
-                        <h1 class = "box-title">Math Modeling Club</h1>
-                        <p>I'm the founder and president of the Math Modeling Club at my school, where I teach students the power of applied math and give them the opportunity to participate in competitions and win scholarship money.</p>
-                    </div>
-                    <div class = "box-image">
-                        <img src = "math-modeling.png">
+                        <img src = "rgwellness.png" style = "width: 75%; border-radius: 50%;">
                         <p>Award from Modeling the Future Challenge</p>
                     </div>
                 </div>
-                <div class = "box-home">
+                <div class = "box-home" uk-scrollspy="cls: uk-animation-slide-right; delay: 100">
                     <div class = "box-text">
-                        <h1 class = "box-title">Girls Who Code</h1>
+                        <h1 class = "box-title">LineLess</h1>
+                        <p>I'm the founder and president of the Math Modeling Club at my school, where I teach students the power of applied math and give them the opportunity to participate in competitions and win scholarship money.</p>
+                    </div>
+                    <div class = "box-image">
+                        <img src = "lineless.png" style = "width: 75%;">
+                        <p>Award from Modeling the Future Challenge</p>
+                    </div>
+                </div>
+                <div class = "box-home" uk-scrollspy="cls: uk-animation-slide-left; delay: 100">
+                    <div class = "box-text">
+                        <h1 class = "box-title">Pole It</h1>
+                        <p>I'm the founder and president of the Math Modeling Club at my school, where I teach students the power of applied math and give them the opportunity to participate in competitions and win scholarship money.</p>
+                    </div>
+                    <div class = "box-image">
+                        <img src = "pole.png" style = "width: 90%;">
+                        <p>Picture from weekly classes with the girls</p>
+                    </div>
+                </div>
+                <div class = "box-home" uk-scrollspy="cls: uk-animation-slide-right; delay: 100">
+                    <div class = "box-text">
+                        <h1 class = "box-title">Computational Framework Assisting Selection of Chemotherapy Drugs</h1>
                         <p>I'm the founder and president of the Math Modeling Club at my school, where I teach students the power of applied math and give them the opportunity to participate in competitions and win scholarship money.</p>
                     </div>
                     <div class = "box-image">
@@ -136,11 +165,17 @@
                         <p>Picture from weekly classes with the girls</p>
                     </div>
                 </div>
+                <div class = "box-home" uk-scrollspy="cls: uk-animation-slide-left; delay: 100">
+                    <div class = "box-text">
+                        <h1 class = "box-title">Modeling Soybean Yield and Insurance Loss in Brown County, SD</h1>
+                        <p>I'm the founder and president of the Math Modeling Club at my school, where I teach students the power of applied math and give them the opportunity to participate in competitions and win scholarship money.</p>
+                    </div>
+                    <div class = "box-image">
+                        <img src = "sfchase.jpg">
+                        <p>SF Chase Center Performance, picture with Gavin Newsom</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
     </body>
 </html>

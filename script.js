@@ -6,4 +6,7 @@ $(function() {
     $("#change").click(function() {
         $(this).toggleClass("fa-times");
     });
+    $("#change").click(function() {
+        $(".hi").toggleClass("");
+    });
 });
