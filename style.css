@@ -31,13 +31,6 @@ a {
     color: rgb(68, 68, 68);
 }
 /* nav underline */
-.underline {
-    height: 3px;
-    background-color: transparent;
-	width: 0%;
-    transition: ease 0.5s;
-    box-shadow: 1px 1px 0px rgba(209, 209, 209, 0.85);
-}
 .nav-item:hover .underline {
     background-color: rgb(88, 88, 88);
 	width: 100%;
@@ -565,6 +558,13 @@ a {
     .nav-item {
         visibility: visible;
     }
+    .underline {
+        height: 3px;
+        background-color: transparent;
+        width: 0%;
+        transition: ease 0.5s;
+        box-shadow: 1px 1px 0px rgba(209, 209, 209, 0.85);
+    }
     /* rhythmic images */
     .column {
         max-width: 24%;
@@ -842,7 +842,8 @@ a {
     border-radius: 5px;
     padding: 2px 10px;
     color: black;
-    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.562);
+    /* text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.562); */
+    font-weight: bold;
     font-size: 45px;
     margin-left: 5%;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
@@ -858,6 +859,7 @@ a {
     transition: .3s;
     margin-bottom: 40px;
     display: flex;
+    background: rgb(246, 246, 246);
 }
 .box-home:hover {
     box-shadow: 2px 2px 20px rgba(0,0,0,0.5);
@@ -883,6 +885,7 @@ a {
 
 .box-title {
     font-size: 30px;
-    text-shadow: 2px 2px 0px rgb(214, 214, 214);
+    color: rgb(0, 0, 0);
+    /* text-shadow: 2px 2px 0px rgb(214, 214, 214); */
     font-family: 'Poppins', sans-serif;
 }
