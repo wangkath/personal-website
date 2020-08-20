@@ -635,6 +635,15 @@ a {
         float: right;
         text-align: right;
     }
+    .video {
+        margin: auto;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    iframe {
+        width: 888px;
+        height: 500px;
+    }
 }
 
 /* nav empty box */
